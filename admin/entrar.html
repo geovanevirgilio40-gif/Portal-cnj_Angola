@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-AO" data-root="../">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Iniciar sessão | Administração CNJ</title>
+  <meta name="theme-color" content="#06152e">
+  <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/admin.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+  <div class="login-page">
+    <aside class="login-aside">
+      <a class="brand" href="../index.html"><img src="../assets/logo/logo-provisorio.svg" alt="Espaço reservado para o logótipo do CNJ" width="64" height="64"><span class="brand-name"><strong>CNJ Angola</strong><span>Conselho Nacional de Juventude</span></span></a>
+      <div class="login-intro"><h2>Gestão do portal institucional</h2><p>Área reservada a administradores autorizados. Os visitantes não precisam de conta para consultar o portal.</p></div>
+      <a href="../index.html">Voltar ao portal público</a>
+    </aside>
+    <main class="login-main">
+      <div class="login-box">
+        <h1>Iniciar sessão</h1>
+        <noscript><p class="noscript">Active o JavaScript para iniciar sessão.</p></noscript>
+        <form id="login-form" method="post" novalidate>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="username" inputmode="email" required></div>
+          <div class="field"><label for="password">Palavra-passe</label><div class="password-wrap"><input id="password" name="password" type="password" autocomplete="current-password" required><button type="button" class="btn btn-outline" id="toggle-password" aria-pressed="false" aria-label="Mostrar palavra-passe" aria-controls="password">Mostrar</button></div></div>
+          <button type="submit" class="btn">Entrar</button>
+          <p id="login-result" role="alert" hidden></p>
+        </form>
+        <div class="demo-entry" id="demo-entry" hidden>
+          <p><span class="tag tag-demo">Demonstração</span></p>
+          <p class="muted">Enquanto o servidor não estiver ligado, pode ver o desenho do painel sem iniciar sessão. Não é um acesso autenticado e não dá acesso a dados reais.</p>
+          <a class="btn btn-outline" href="dashboard.html">Pré-visualizar o painel</a>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="../js/config.js"></script>
+  <script src="../js/core/ui.js"></script>
+  <script src="../js/core/forms.js"></script>
+  <script src="../js/services/api.js"></script>
+  <script src="../js/services/auth.js"></script>
+  <script src="../js/data/demo-data.js"></script>
+  <script src="../js/services/repository.js"></script>
+  <script src="../js/admin/entrar.js"></script>
+</body>
+</html>
