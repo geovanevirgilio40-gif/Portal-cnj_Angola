@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-AO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Eventos | CNJ Angola</title>
+  <meta name="description" content="Agenda de eventos do Conselho Nacional de Juventude de Angola.">
+  <meta name="theme-color" content="#0b2347">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="eventos">
+  <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+  <header id="site-header"></header>
+  <noscript><p class="noscript">Active o JavaScript no navegador para usar o menu e ver os conteúdos do portal.</p></noscript>
+  <main id="conteudo" tabindex="-1">
+    <div class="page-banner"><div class="container">
+      <nav aria-label="Localização"><ol class="breadcrumb"><li><a href="index.html">Início</a></li><li aria-current="page">Eventos</li></ol></nav>
+      <h1 id="banner-title">Eventos</h1><p>Agenda dos próximos eventos e registo dos já realizados.</p></div></div>
+    <div class="section section-mist"><div class="container">
+      <form class="toolbar" id="event-filters" role="search">
+        <div class="field field-grow"><label for="event-search">Pesquisar eventos</label><input id="event-search" type="search" placeholder="Nome ou local" autocomplete="off"></div>
+      </form>
+      <div class="chips" role="group" aria-label="Período">
+        <button type="button" class="chip" data-period="futuros">Próximos eventos</button>
+        <button type="button" class="chip" data-period="realizados">Eventos realizados</button>
+      </div>
+      <p class="result-count" id="event-count" aria-live="polite"></p>
+      <div id="event-list"></div>
+      <nav class="pagination" id="event-pagination" aria-label="Paginação dos eventos"></nav>
+    </div></div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="js/config.js"></script>
+  <script src="js/core/ui.js"></script>
+  <script src="js/core/forms.js"></script>
+  <script src="js/services/api.js"></script>
+  <script src="js/data/demo-data.js"></script>
+  <script src="js/services/repository.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/public/componentes.js"></script>
+  <script src="js/public/eventos.js"></script>
+</body>
+</html>

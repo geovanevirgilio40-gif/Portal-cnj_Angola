@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-AO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Galeria | CNJ Angola</title>
+  <meta name="description" content="Galeria de fotografias das actividades do CNJ.">
+  <meta name="theme-color" content="#0b2347">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="galeria">
+  <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+  <header id="site-header"></header>
+  <noscript><p class="noscript">Active o JavaScript no navegador para usar o menu e ver os conteúdos do portal.</p></noscript>
+  <main id="conteudo" tabindex="-1">
+    <div class="page-banner"><div class="container">
+      <nav aria-label="Localização"><ol class="breadcrumb"><li><a href="index.html">Início</a></li><li aria-current="page">Galeria</li></ol></nav>
+      <h1 id="banner-title">Galeria</h1><p>Fotografias das actividades, organizadas por categoria.</p></div></div>
+    <div class="section section-mist"><div class="container">
+      <div class="chips" id="gallery-filters" role="group" aria-label="Filtrar por categoria"></div>
+      <p class="result-count" id="gallery-count" aria-live="polite"></p>
+      <div class="gallery-grid" id="gallery-grid"></div>
+      <nav class="pagination" id="gallery-pagination" aria-label="Paginação da galeria"></nav>
+    </div></div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="js/config.js"></script>
+  <script src="js/core/ui.js"></script>
+  <script src="js/core/forms.js"></script>
+  <script src="js/services/api.js"></script>
+  <script src="js/data/demo-data.js"></script>
+  <script src="js/services/repository.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/public/componentes.js"></script>
+  <script src="js/public/galeria.js"></script>
+</body>
+</html>

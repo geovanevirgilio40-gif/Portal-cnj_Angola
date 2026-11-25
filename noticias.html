@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-AO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Notícias | CNJ Angola</title>
+  <meta name="description" content="Notícias e comunicados do Conselho Nacional de Juventude de Angola.">
+  <meta name="theme-color" content="#0b2347">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="noticias">
+  <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+  <header id="site-header"></header>
+  <noscript><p class="noscript">Active o JavaScript no navegador para usar o menu e ver os conteúdos do portal.</p></noscript>
+  <main id="conteudo" tabindex="-1">
+    <div class="page-banner"><div class="container">
+      <nav aria-label="Localização"><ol class="breadcrumb"><li><a href="index.html">Início</a></li><li aria-current="page">Notícias</li></ol></nav>
+      <h1 id="banner-title">Notícias</h1><p>Acompanhe a actualidade do Conselho e das organizações juvenis.</p></div></div>
+    <div class="section"><div class="container">
+      <div id="news-list-view">
+        <form class="toolbar" id="news-filters" role="search">
+          <div class="field field-grow"><label for="news-search">Pesquisar notícias</label><input id="news-search" type="search" placeholder="Escreva uma palavra" autocomplete="off"></div>
+          <div class="field"><label for="news-category">Categoria</label><select id="news-category"><option value="">Todas as categorias</option></select></div>
+        </form>
+        <p class="result-count" id="news-count" aria-live="polite"></p>
+        <div class="grid" id="news-grid"></div>
+        <nav class="pagination" id="news-pagination" aria-label="Paginação das notícias"></nav>
+      </div>
+      <div id="news-article-view" hidden></div>
+    </div></div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="js/config.js"></script>
+  <script src="js/core/ui.js"></script>
+  <script src="js/core/forms.js"></script>
+  <script src="js/services/api.js"></script>
+  <script src="js/data/demo-data.js"></script>
+  <script src="js/services/repository.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/public/componentes.js"></script>
+  <script src="js/public/noticias.js"></script>
+</body>
+</html>
