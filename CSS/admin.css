@@ -1,0 +1,75 @@
+/* =========================================================
+   Portal CNJ — área administrativa
+   ========================================================= */
+.admin-body { background: var(--mist); }
+.admin-shell { display: grid; grid-template-columns: 260px minmax(0, 1fr); min-height: 100vh; min-height: 100dvh; }
+
+.sidebar { position: sticky; top: 0; height: 100vh; height: 100dvh; overflow-y: auto; display: flex; flex-direction: column; background: var(--navy-950); color: #c3cee2; z-index: 60; }
+.sidebar .brand { color: var(--white); padding: 18px 20px; border-bottom: 3px solid var(--gold-500); }
+.sidebar .brand img { width: 44px; height: 44px; background: var(--white); border-radius: var(--radius-s); }
+.sidebar .brand span span { color: #c3cee2; }
+.sidebar nav { padding: 12px 10px; flex: 1; }
+.sidebar ul { list-style: none; margin: 0; padding: 0; }
+.sidebar nav a { display: flex; align-items: center; gap: 12px; min-height: 44px; padding: 8px 12px; margin-bottom: 2px; color: #dbe3f1; text-decoration: none; border-radius: var(--radius-s); border-left: 3px solid transparent; }
+.sidebar nav a:hover { background: rgba(255,255,255,.07); color: var(--white); }
+.sidebar nav a[aria-current="page"] { background: rgba(255,255,255,.12); border-left-color: var(--gold-500); color: var(--white); font-weight: 600; }
+.sidebar-foot { padding: 14px 20px; border-top: 1px solid rgba(255,255,255,.12); font-size: .88rem; }
+.sidebar-foot a { color: var(--gold-300); }
+
+.admin-main { min-width: 0; display: flex; flex-direction: column; }
+.admin-header { position: sticky; top: 0; z-index: 40; display: flex; flex-wrap: wrap; align-items: center; gap: 12px; min-height: 68px; padding: 10px var(--gutter); background: var(--white); border-bottom: 1px solid var(--line); }
+.admin-header h1 { font-size: 1.35rem; margin: 0; margin-right: auto; }
+.admin-header .field { flex-direction: row; align-items: center; margin: 0; }
+.admin-header .field label { font-size: .84rem; white-space: nowrap; }
+.admin-header .field select { min-height: 38px; padding: 4px 8px; font-size: .9rem; }
+.sidebar-toggle { display: none; }
+.admin-content { padding: 24px var(--gutter) 56px; width: 100%; max-width: 1400px; }
+.admin-intro { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 20px; }
+.admin-intro p { margin: 0; color: var(--ink-soft); max-width: 70ch; }
+.admin-content > .alert { margin-bottom: 20px; }
+
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 16px; list-style: none; padding: 0; margin: 0 0 24px; }
+.stat { background: var(--white); border: 1px solid var(--line); border-top: 4px solid var(--navy-900); border-radius: var(--radius-m); padding: 16px 18px; }
+.stat a { text-decoration: none; display: block; color: var(--ink); }
+.stat-value { display: block; font-family: var(--font-display); font-size: 2.4rem; line-height: 1.15; color: var(--navy-900); }
+.stat-label { display: block; font-weight: 600; margin-bottom: 6px; }
+.admin-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 20px; }
+.box { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-m); padding: 20px; min-width: 0; }
+.box h2 { font-size: 1.18rem; }
+.box + .box-gap { margin-top: 20px; }
+.timeline { list-style: none; margin: 0; padding: 0; }
+.timeline li { padding: 12px 0; border-top: 1px solid var(--line); overflow-wrap: anywhere; }
+.timeline li:first-child { border-top: 0; }
+
+.table-wrap { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-m); overflow-x: auto; }
+.table { width: 100%; border-collapse: collapse; font-size: .93rem; }
+.table th, .table td { padding: 12px 14px; text-align: left; vertical-align: middle; border-bottom: 1px solid var(--line); }
+.table th { background: #f7f9fc; color: var(--navy-900); font-size: .85rem; }
+.table tbody tr:last-child td { border-bottom: 0; }
+.table-title { display: flex; align-items: center; gap: 12px; min-width: 220px; }
+.table-title img { width: 64px; height: 48px; object-fit: cover; border-radius: var(--radius-s); flex: none; }
+.table-title strong { display: block; overflow-wrap: anywhere; }
+.row-actions { display: flex; flex-wrap: wrap; gap: 6px; }
+
+.admin-gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr)); gap: 16px; }
+.admin-gallery .card-media { aspect-ratio: 4 / 3; }
+
+.previews { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; margin-bottom: 16px; list-style: none; padding: 0; }
+.previews:empty { display: none; }
+.previews li { display: flex; flex-direction: column; gap: 6px; border: 1px solid var(--line); border-radius: var(--radius-m); padding: 8px; }
+.previews img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius-s); }
+.previews input { width: 100%; min-height: 40px; padding: 6px 8px; font: inherit; font-size: .9rem; border: 1.5px solid #b9c4d6; border-radius: var(--radius-s); }
+
+/* Início de sessão */
+.login-page { min-height: 100vh; min-height: 100dvh; display: grid; grid-template-columns: 1fr 1fr; }
+.login-aside { background: var(--navy-900); color: #d5deee; display: flex; flex-direction: column; justify-content: space-between; gap: 32px; padding: clamp(24px, 5vw, 64px); border-right: 5px solid var(--gold-500); }
+.login-aside h2 { color: var(--white); font-size: clamp(1.6rem, 1.2rem + 1.6vw, 2.5rem); }
+.login-aside .brand { color: var(--white); }
+.login-aside .brand img { background: var(--white); border-radius: var(--radius-s); width: 64px; height: 64px; }
+.login-aside .brand span span { color: #c3cee2; }
+.login-aside a { color: var(--gold-300); }
+.login-main { display: flex; align-items: center; justify-content: center; padding: 32px var(--gutter); background: var(--white); }
+.login-box { width: 100%; max-width: 420px; }
+.login-box .btn[type="submit"] { width: 100%; }
+.login-box .alert { margin-top: 16px; }
+.demo-entry { margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--line); }
